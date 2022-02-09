@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: #F1F5FB;
+    position: relative;
+    font-size: 1.3rem;
+    
+}
+
+.navbar-item a:hover {
+    color: #CDD9EB;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #dfdfdf;
+    color:#496694;
+}
+
+.navbar-container{
+    width: 100%;
+    height: 4rem;
+    background-color: #718AB2;    
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+
+.nav-list{
+    list-style: none;
+}
+
+ .navbar-item{
+    display: inline-block;
+    margin-left: 3rem;
+    padding-top: 1.2rem;
+    font-weight: 600;
+
+} 
+
+.navbar-item:nth-child(1){
+    margin-right: 70rem ;
+}
+
+.navbar-item:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    padding: 0;
+}
+
+.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.title {
+    text-transform: capitalize;
+    color: #222c3d;
+}
+
+.splash-container {
+    height: 60vh;
+    width: 100%;
+    
+} 
+
+/* Photo by <a href="https://unsplash.com/@sigmund?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sigmund</a> on <a href="https://unsplash.com/s/photos/web-design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+.splash-img {
+    background-image:
+    linear-gradient(to bottom right,
+     rgba(201, 201, 201, 0.788),
+     rgba(100, 99, 99, 0.788) ) 
+    ,url('images/splash.jpg');
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.headline {
+    color: #CDD9EB;
+    text-transform: capitalize;
+    left: 50%;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 800;
+    margin-top: 5rem;
+    position: absolute;
+    
+}
+.sub-text{
+     color: #CDD9EB;
+    text-transform: capitalize;
+    left: 50%;
+    bottom: 30%;
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+    font-weight: 800;
+    position: absolute;
+    animation: moveInFromLeft 1.5s linear 80ms;
+}
+
+@keyframes moveInFromLeft{
+    0%{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.header {
+    position: absolute;
+    width: 30%;
+    background-color: black;
+    height: 64vh;
+    background-image: url(images/profilePic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 6rem 0 0 4rem;
+}
+
+.welcome-tag {
+    
+    margin: 1rem 0 0 75rem;
+    font-size: 6rem;
+}
+
+.blurb-container {
+    margin: 2rem 0 2rem 4rem;
+    width: 85%;
+}
+
+.blurb{
+    font-size: 2.6rem;
+}
+
+.entry-container {
+    display: flex;
+    height: 25rem;
+    width: 85%;
+    margin: auto;
+    border-top: 0.125rem solid #c0d1eb;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 2rem;
+}
+
+.entry-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-height: 100%;
+    margin-left: 2rem;
+}
+
+.entry-title {
+    margin-top: 0.4rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.entry {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.entry-date {
+    font-size: 1.4rem;
+}
+
+.entry-lead {
+    font-size: 1.3rem;
+    margin-top: 0.3rem;
+    
+}
+
+.entry-img{
+   height: 20rem;
+   width: 35rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Photo by <a href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ilya Pavlov</a> on <a href="https://unsplash.com/s/photos/web-design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
